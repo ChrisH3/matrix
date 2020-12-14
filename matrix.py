@@ -256,7 +256,7 @@ class Matrix:
 		for i in range(m.rows):
 			for j in range(m.cols):
 				x = 0
-				for k in range(m.cols):
+				for k in range(self.cols):
 					x += self[i][k] * other[k][j]
 				m[i][j] = x
 		return m
